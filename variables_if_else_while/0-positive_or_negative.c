@@ -4,8 +4,8 @@
 
 /**
  * main - Entry point
- *
- * Return: Always 0 (Success)
+ * Prints whether a random number is below, above, or equal to 0
+ * Return: 0.
  */
 int main(void)
 {
