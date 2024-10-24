@@ -11,6 +11,7 @@ int main(void)
 	int n = 50;
 	unsigned long int F1 = 1, F2 = 2, Fn;
 	int i = 1;
+
 	printf("%lu, %lu", F1, F2);
 	for (i = 1 ; i <= n; i++)
 	{
