@@ -10,10 +10,9 @@ int main(void)
 {
 	int n = 50;
 	unsigned int F1 = 1, F2 = 2, Fn;
-
+	int i = 1;
 	printf("%u, %u", F1, F2);
-
-	for (int i = 3; i <= n; i++)
+	for (i = 3 ; i <= n; i++)
 	{
 		Fn = F1 + F2;
 		printf(", %u", Fn);
