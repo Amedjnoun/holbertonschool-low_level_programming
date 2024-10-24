@@ -12,13 +12,16 @@ int main(void)
 	unsigned int F1 = 1, F2 = 2, Fn;
 	int i = 1;
 	printf("%u, %u", F1, F2);
-	for (i = 3 ; i <= n; i++)
+	for (i = 1 ; i <= n; i++)
 	{
+		if (i >= 3)
+		{
 		Fn = F1 + F2;
 		printf(", %u", Fn);
 
 		F1 = F2;
 		F2 = Fn;
+		}
 	}
 
 	printf("\n");
