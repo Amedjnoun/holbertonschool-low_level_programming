@@ -9,14 +9,14 @@
 int main(void)
 {
 	int n = 50;
-	unsigned long long int F1 = 1, F2 = 2, Fn;
+	unsigned int F1 = 1, F2 = 2, Fn;
 
-	printf("%llu, %llu", F1, F2);
+	printf("%u, %u", F1, F2);
 
 	for (int i = 3; i <= n; i++)
 	{
 		Fn = F1 + F2;
-		printf(", %llu", Fn);
+		printf(", %u", Fn);
 
 		F1 = F2;
 		F2 = Fn;
