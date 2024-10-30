@@ -3,11 +3,8 @@
 
 /**
  * main - Entry point
+ * fizz_buzz prints the numbers from 1 to 100, followed by a new line
  * return: 0 success
- * fizz_buzz - prints the numbers from 1 to 100, followed by a new line
- * For multiples of three, print Fizz instead of the number
- * For the multiples of five, print Buzz
- * For numbers which are multiples of both three and five, print FizzBuzz
  */
 
 void fizz_buzz(void);
@@ -18,6 +15,12 @@ int main(void)
 	return (0);
 }
 
+/**
+ * fizz_buzz - prints the numbers from 1 to 100, followed by a new line.
+ * For multiples of three, prints "Fizz" instead of the number.
+ * For multiples of five, prints "Buzz".
+ * For numbers which are multiples of both three and five, prints "FizzBuzz".
+ */
 void fizz_buzz(void)
 {
 	int i;
