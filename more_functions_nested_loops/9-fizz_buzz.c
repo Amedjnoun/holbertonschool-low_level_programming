@@ -8,6 +8,14 @@
  * For numbers which are multiples of both three and five, print FizzBuzz
  */
 
+void fizz_buzz(void);
+
+int main(void)
+{
+	fizz_buzz();
+	return (0);
+}
+
 void fizz_buzz(void)
 {
 	int i;
