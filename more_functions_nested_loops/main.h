@@ -1,9 +1,9 @@
 #ifndef main_h
 #define main_h
 
-/*
+/**
  * main.h
- * Header functions for functions_nested_loops.
+ * Header functions for functions_nested_loops - more_functions_nested_loops - pointers_arrays_strings.
  */
 
 int _putchar(char c);
