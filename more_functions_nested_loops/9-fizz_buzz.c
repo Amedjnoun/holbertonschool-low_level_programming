@@ -21,6 +21,7 @@ int main(void)
  * For multiples of five, prints "Buzz".
  * For numbers which are multiples of both three and five, prints "FizzBuzz".
  */
+
 void fizz_buzz(void)
 {
 	int i;
