@@ -34,28 +34,28 @@ Before you begin, ensure you have met the following requirements:
 
 This repository is structured as follows:
 
-- `0x00-hello_world`: Introduction to C programming, including compilation and syntax.
-- `0x01-variables_if_else_while`: Basics of variables, conditionals, and loops.
-- `0x02-functions_nested_loops`: Functions and nested loops.
-- `0x03-debugging`: Debugging techniques and tools.
-- `0x04-more_functions_nested_loops`: More on functions and nested loops.
-- `0x05-pointers_arrays_strings`: Introduction to pointers, arrays, and strings.
-- `0x06-pointers_arrays_strings`: More on pointers, arrays, and strings.
-- `0x07-recursion`: Recursion concepts and examples.
-- `0x08-static_libraries`: Creating and using static libraries.
-- `0x09-argc_argv`: Handling command-line arguments.
-- `0x0A-malloc_free`: Dynamic memory allocation with `malloc` and `free`.
-- `0x0B-more_malloc_free`: More on dynamic memory allocation.
-- `0x0C-preprocessor`: Preprocessor directives and macros.
-- `0x0D-structures_typedef`: Structures and `typedef`.
-- `0x0E-function_pointers`: Function pointers.
-- `0x0F-variadic_functions`: Variadic functions.
-- `0x10-printf`: Custom implementation of the `printf` function.
-- `0x11-singly_linked_lists`: Singly linked lists.
-- `0x12-more_singly_linked_lists`: More on singly linked lists.
-- `0x13-bit_manipulation`: Bit manipulation.
-- `0x14-file_io`: File input/output.
-- `0x15-simple_shell`: Implementation of a simple shell.
+- `hello_world`: Introduction to C programming, including compilation and syntax.
+- `variables_if_else_while`: Basics of variables, conditionals, and loops.
+- `functions_nested_loops`: Functions and nested loops.
+- `debugging`: Debugging techniques and tools.
+- `more_functions_nested_loops`: More on functions and nested loops.
+- `pointers_arrays_strings`: Introduction to pointers, arrays, and strings.
+- `more_pointers_arrays_strings`: More on pointers, arrays, and strings.
+- `recursion`: Recursion concepts and examples.
+- `static_libraries`: Creating and using static libraries.
+- `argc_argv`: Handling command-line arguments.
+- `malloc_free`: Dynamic memory allocation with `malloc` and `free`.
+- `more_malloc_free`: More on dynamic memory allocation.
+- `preprocessor`: Preprocessor directives and macros.
+- `structures_typedef`: Structures and `typedef`.
+- `function_pointers`: Function pointers.
+- `variadic_functions`: Variadic functions.
+- `printf`: Custom implementation of the `printf` function.
+- `singly_linked_lists`: Singly linked lists.
+- `more_singly_linked_lists`: More on singly linked lists.
+- `bit_manipulation`: Bit manipulation.
+- `file_io`: File input/output.
+- `simple_shell`: Implementation of a simple shell.
 
 ## Contributing
 
