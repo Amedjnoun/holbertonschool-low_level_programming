@@ -9,6 +9,7 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 - How to use strings and how to manipulate them
 - Scope of variables
 
+
 ## Requirements
 
 ### General
@@ -26,8 +27,10 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 - The prototypes of all your functions and the prototype of the function `_putchar` should be included in your header file called `main.h`
 - Don’t forget to push your header file
 
+
 ### More Info
 - You do not need to learn about pointers to functions, pointers to pointers, multidimensional arrays, arrays of structures, `malloc` and `free` - yet.
+
 
 ## Tasks Part 1
 
@@ -54,3 +57,15 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 5. **Always look up**: Write a function that changes all lowercase letters of a string to uppercase.
 6. **Expect the best. Prepare for the worst. Capitalize on what comes**: Write a function that capitalizes all words of a string.
 7. **Mozart composed his music not for the elite, but for everybody**: Write a function that encodes a string into 1337.
+
+
+## Tasks Part 3
+
+0. **memset**: Write a function that fills memory with a constant byte.
+1. **memcpy**: Write a function that copies memory area.
+2. **strchr**: Write a function that locates a character in a string.
+3. **strspn**: Write a function that gets the length of a prefix substring.
+4. **strpbrk**: Write a function that searches a string for any of a set of bytes.
+5. **strstr**: Write a function that locates a substring.
+6. **Chess is mental torture**: Write a function that prints the chessboard.
+7. **The line of life is a ragged diagonal between duty and desire**: Write a function that prints the sum of the two diagonals of a square matrix of integers.
