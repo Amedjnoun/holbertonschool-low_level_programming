@@ -5,7 +5,7 @@
  * @haystack: string to be scanned
  * @needle: string containing the sequence of characters to match
  *
- * Return: pointer to the beginning of the located substring, or NULL if the substring is not found
+ * Return:
  */
 
 char *_strstr(char *haystack, char *needle)
