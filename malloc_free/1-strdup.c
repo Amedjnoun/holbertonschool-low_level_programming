@@ -9,9 +9,9 @@
  * Return: NULL if str = NULL, a pointer to the duplicated string, or NULL if it fails.
  */
 
-char *_strdup(char *str);
+char *_strdup(char *str)
 {
-	char *str;
+
 	unsigned int i, len = 0;
 
 	if (str == NULL)
