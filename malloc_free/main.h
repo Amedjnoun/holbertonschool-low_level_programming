@@ -56,5 +56,17 @@ void rev_string(char *s);
 void rev_array(int *a, int n);
 void swap_int(int *a, int *b);
 int wildcmp(char *s1, char *s2);
+int *array_range(int min, int max);
+char *strdup(char *str);
+char *_strdup(char *str);
+char *_strcat(char *dest, char *src);
+char *_strncat(char *dest, char *src, int n);
+char *_concat(char *s1, char *s2);
+int **alloc_grid(int width, int height);
+void free_grid(int **grid, int height);
+void *malloc_checked(unsigned int b);
+void *_calloc(unsigned int nmemb, unsigned int size);
+char *string_nconcat(char *s1, char *s2, unsigned int n);
+int *array_range(int min, int max);
 
 #endif
