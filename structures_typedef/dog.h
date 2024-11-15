@@ -12,6 +12,7 @@ typedef struct dog dog_t;
  * @age: second member
  * @owner: third member
  */
+
 struct dog
 {
 	char *name;
