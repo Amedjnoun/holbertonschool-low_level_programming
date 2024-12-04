@@ -2,12 +2,12 @@
 #define MAIN_H
 
 /**
- * main.h
- * Header functions for functions_nested_loops - more_functions_nested_loops - pointers_arrays_strings.
+ * main.h - Header file for the main project
+ * Header functions for the main project
  */
 
 /* Character functions */
-int _putchar(char c);
+int _putchar(char c); /* Provided by Holberton School */
 int _isalpha(int c);
 int _isdigit(int c);
 int _islower(int c);
@@ -79,6 +79,5 @@ void print_rev(char *s);
 void print_square(int size);
 void print_to_98(int n);
 void print_triangle(int size);
-
 
 #endif /* MAIN_H */
