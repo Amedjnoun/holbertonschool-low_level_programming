@@ -1,14 +1,5 @@
-#ifndef list_h
-#define list_h
-
-/**
- * List.h
- * Linked list data structure
- */
-
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
+#ifndef LISTS_H
+#define LISTS_H
 
 /**
  * struct list_s - singly linked list
@@ -17,13 +8,12 @@
  * @next: points to the next node
  *
  * Description: singly linked list node structure
- * for Holberton project
  */
 typedef struct list_s
 {
-    char *str;
-    size_t len;
-    struct list_s *next;
+	char *str;
+	size_t len;
+	struct list_s *next;
 } list_t;
 
 /* Function prototypes */
@@ -33,5 +23,4 @@ list_t *add_node(list_t **head, const char *str);
 list_t *add_node_end(list_t **head, const char *str);
 void free_list(list_t *head);
 
-
-#endif /* list_h */
+#endif /* LISTS_H */
