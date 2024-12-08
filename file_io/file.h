@@ -1,6 +1,18 @@
 #ifndef FILE_H
 #define FILE_H
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include "main.h"
+
+void check_args(int argc);
+int open_file_from(char *filename);
+int open_file_to(char *filename);
+void copy_content(int file_from, int file_to);
+void close_file(int fd);
+
 /**
  * check_args - Checks if the number of arguments is correct
  * @argc: The number of arguments passed to the program
@@ -13,6 +25,7 @@ void check_args(int argc)
 		exit(97);
 	}
 }
+
 
 /**
  * open_file_from - Opens a file to read from
@@ -64,7 +77,7 @@ void copy_content(int file_from, int file_to)
 		wrote_to = write(file_to, buffer, read_from);
 		if (wrote_to != read_from)
 		{
-			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file_to);
+			dprintf(STDERR_FILENO, "Error: Can't write to %d\n", file_to);
 			close(file_from);
 			close(file_to);
 			exit(99);
@@ -72,7 +85,7 @@ void copy_content(int file_from, int file_to)
 	}
 	if (read_from == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %d\n", file_from);
 		close(file_from);
 		close(file_to);
 		exit(98);
