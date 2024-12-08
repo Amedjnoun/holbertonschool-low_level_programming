@@ -3,7 +3,7 @@
 #include <fcntl.h>
 #include <unistd.h>
 #include "main.h"
-#include "file_utils.h"
+#include "file.h"
 
 /**
  * main - Copies the content of a file to another file
