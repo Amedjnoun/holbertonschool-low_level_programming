@@ -8,10 +8,11 @@
  * error_exit - prints an error message and exits with a status code
  * @message: the error message to print
  * @code: the status code to exit with
+ * @filename: the name of the file related to the error
  */
-void error_exit(char *message, int code)
+void error_exit(char *message, int code, char *filename)
 {
-	dprintf(STDERR_FILENO, "%s", message);
+	dprintf(STDERR_FILENO, message, filename);
 	exit(code);
 }
 
@@ -28,10 +29,7 @@ int open_file(char *filename, int flags, mode_t mode)
 	int fd = open(filename, flags, mode);
 
 	if (fd == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't open file %s\n", filename);
-		exit(98);
-	}
+		error_exit("Error: Can't open file %s\n", 98, filename);
 	return (fd);
 }
 
@@ -62,7 +60,7 @@ int main(int ac, char **av)
 	char buffer[1024];
 
 	if (ac != 3)
-		error_exit("Usage: cp file_from file_to\n", 97);
+		error_exit("Usage: cp file_from file_to\n", 97, NULL);
 
 	fd_from = open_file(av[1], O_RDONLY, 0);
 	fd_to = open_file(av[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
@@ -71,11 +69,11 @@ int main(int ac, char **av)
 	{
 		wr = write(fd_to, buffer, rd);
 		if (wr != rd)
-			error_exit("Error: Can't write to file\n", 99);
+			error_exit("Error: Can't write to %s\n", 99, av[2]);
 	}
 
 	if (rd == -1)
-		error_exit("Error: Can't read from file\n", 98);
+		error_exit("Error: Can't read from file %s\n", 98, av[1]);
 
 	close_file(fd_from);
 	close_file(fd_to);
